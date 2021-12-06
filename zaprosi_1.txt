@@ -1,0 +1,4 @@
+1)UPDATE pokupka SET date = SUBSTR(date, 7, 4) || '-' || SUBSTR(date, 4, 2) || '-' || SUBSTR(date, 1, 2);
+2)SELECT id_buyer FROM pokupka WHERE date = (SELECT max(date) from pokupka)
+3)SELECT DISTINCT(date) FROM pokupka;
+4)SELECT sum("kol-vo") FROM zakaz
