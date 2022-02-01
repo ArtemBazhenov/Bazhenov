@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <meta charset="UTF-8">
+    <title>Главная</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="{{ url_for('static', filename='logo.png') }}" alt="prishel" width="50" class="logotip">
+            <ul class="t">
+                <a href="/">
+                    <li>Главная</li>
+                </a>
+                <a href="catalog">
+                    <li>Каталог</li>
+                </a>
+                <a href="about">
+                    <li>О нас</li>
+                </a>
+            </ul>
+        </header>
+        <hr>
+        <h1>Добро пожаловать на наш интернет-магазин "Гена и Чебурашка"</h1>
+        <p>На нашем сайте вы можете приобрести товары из одноименного видео =)</p>
+        <img src="{{ url_for('static', filename='nachalo.png') }}" alt="диван" class="pic">
+        <footer>
+            <p>Почта для связи с нами mail@gmail.com</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <title>Каталог</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <ul class="t">
+                <a href="/">
+                    <li>Главная</li>
+                </a>
+            </ul>
+        </header>
+        <hr>
+        <ul>
+            <div class="item_card">
+                <img src="{{ url_for('static', filename='nachalo.png') }}" alt="kos" width="300" class="pic">
+                <a href="kos" class="link">
+                    <h4>Главный виновник видео</h4>
+                </a>
+            </div>
+            <div class="item_card">
+                <img src="{{ url_for('static', filename='p.png') }}" alt="полотенце" width="320" height="205" class="pic">
+                <a href="towel" class="link">
+                    <h4>Полотенце-штаны</h4>
+                </a>
+            </div>
+        </ul>
+        <footer>
+            <p>Почта для связи с нами mail@gmail.com</p>
+        </footer>
+    </div>
+
+</body>
+</html>
