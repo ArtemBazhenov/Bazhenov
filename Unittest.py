@@ -3,9 +3,11 @@ import unittest
 
 class TestTable(unittest.TestCase):
     
+    @classmethod
     def setUpClass(cls) -> None:
         cls.db = DB()
-    
+        
+    @classmethod
     def tearDownClass(cls) -> None:
         cls.db.dbClose()
     
